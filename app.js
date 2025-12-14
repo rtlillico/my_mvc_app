@@ -13,8 +13,8 @@ app.set('views', __dirname + '/views');
 
 // Import routes
 const mainRoutes = require('./routes/mainRoutes');
-// app.use('/', mainRoutes);
+app.use('/', mainRoutes);
 
-// app.listen(port, () => {
-//     console.log(`Server running on http://localhost:${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+});
