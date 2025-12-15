@@ -11,7 +11,7 @@ exports.homePage = (req, res) => {
         // Render the 'index' view and pass the data
         res.render('index', { 
             pageTitle: 'Home Page', 
-            // users: results 
+            controls: results 
         });
     });
 };
